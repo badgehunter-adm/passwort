@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://npjojzfxxqdizrkmrwqa.supabase.co; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>Neues Passwort – Badgehunter</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <img class="logo" src="icon.png" alt="Badgehunter" width="64" height="64">
+  <h1>Neues Passwort festlegen</h1>
+  <p id="intro">Einen Moment …</p>
+  <noscript><p>Bitte aktiviere JavaScript, um Dein Passwort zu ändern.</p></noscript>
+  <form id="form" hidden>
+    <label for="pw1">Neues Passwort</label>
+    <input id="pw1" type="password" autocomplete="new-password" minlength="8" required>
+    <label for="pw2">Passwort wiederholen</label>
+    <input id="pw2" type="password" autocomplete="new-password" minlength="8" required>
+    <button id="save" type="submit">Passwort speichern</button>
+  </form>
+  <div id="msg" role="status" hidden></div>
+  <footer><a href="https://badgehunter.com/impressum.html" rel="noreferrer">Impressum</a><a href="https://badgehunter.com/datenschutz.html" rel="noreferrer">Datenschutz</a></footer>
+</main>
+</body>
+</html>
